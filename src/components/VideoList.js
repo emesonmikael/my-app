@@ -10,7 +10,7 @@ const VideoList = ({ route }) => {
   const navigation = useNavigation();
   
   // Recebe a URL da playlist a ser carregada; se não for fornecida, usa a URL padrão
-  const { playlistUrl } = route.params || { playlistUrl: 'https://strimer-mutimidia.vercel.app/lista.m3u' };
+  const { playlistUrl } = route.params || { playlistUrl: 'http://paineliptvbr.ddns.net/ssiptv.php?username=220789&password=989122&ssiptv&output=mpegts' };
 
   useEffect(() => {
     const loadM3U = async () => {
