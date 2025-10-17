@@ -27,7 +27,7 @@ const VideoList = ({ route }) => {
     if (videoUrl.endsWith('.m3u') || videoUrl.endsWith('.m3u8')) {
       // Se for um arquivo M3U ou M3U8, navega para a mesma tela com a nova playlist
       navigation.push('VideoList', { playlistUrl: item.url });
-    } else if (videoUrl.endsWith('.mp4') || videoUrl.endsWith('.m3u8')) {
+    } else if (videoUrl.endsWith('.mp4') || videoUrl.endsWith('.ts')) {
       // Se for um vídeo, navega para o reprodutor
       navigation.navigate('VideoPlayer', { videoUrl: item.url });
     } else {
