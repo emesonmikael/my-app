@@ -13,7 +13,7 @@ const VideoList = () => {
 
   useEffect(() => {
     const loadM3U = async () => {
-      const lista = await parseM3U ('https://strimer-mutimidia.vercel.app/filmes.m3u');//('https://strimer-mutimidia.vercel.app/AmaonPrimer.m3u'); // Substitua pela URL correta
+      const lista = await parseM3U ('https://backend-aejq.vercel.app/proxy/ssiptv.php?username=220789&password=989122&vod=117&output=mpegts');//('https://strimer-mutimidia.vercel.app/AmaonPrimer.m3u'); // Substitua pela URL correta
       console.log('Lista de vídeos carregada:', lista); // Verificação de depuração
       setVideos(lista);
       setLoading(false);
